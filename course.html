@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>E-Learning Platform</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar">
+    <h2 class="logo">E-Learn</h2>
+    <ul>
+        <li><a href="#courses">Courses</a></li>
+        <li><a href="#video">Video</a></li>
+        <li><a href="#progress">Progress</a></li>
+    </ul>
+</nav>
+
+<!-- Hero -->
+<section class="hero">
+    <h1>Learn Anytime, Anywhere</h1>
+    <p>Upgrade your skills with modern courses</p>
+    <a href="#courses" class="btn">Explore Courses</a>
+</section>
+
+<!-- Courses -->
+<section id="courses" class="section">
+    <h2>Popular Courses</h2>
+
+    <div class="course-grid">
+        <div class="course-card">
+            <h3>HTML & CSS</h3>
+            <p>Build beautiful websites</p>
+            <button onclick="startCourse()">Start Learning</button>
+        </div>
+
+        <div class="course-card">
+            <h3>JavaScript</h3>
+            <p>Make websites interactive</p>
+            <button onclick="startCourse()">Start Learning</button>
+        </div>
+
+        <div class="course-card">
+            <h3>React Basics</h3>
+            <p>Modern frontend development</p>
+            <button onclick="startCourse()">Start Learning</button>
+        </div>
+    </div>
+</section>
+
+<!-- Video -->
+<section id="video" class="section video-section">
+    <h2>Course Video</h2>
+
+    <div class="video-container">
+        <iframe 
+            src="https://www.youtube.com/embed/mU6anWqZJcc"
+            allowfullscreen>
+        </iframe>
+    </div>
+
+    <button class="btn success" onclick="completeLesson()">
+        Mark Lesson Completed
+    </button>
+</section>
+
+<!-- Progress -->
+<section id="progress" class="section">
+    <h2>Your Progress</h2>
+
+    <div class="progress-card">
+        <p>HTML & CSS Course</p>
+
+        <div class="progress-bar">
+            <div id="progress-fill"></div>
+        </div>
+
+        <span id="progress-text">0%</span>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 E-Learning Platform</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
